@@ -596,7 +596,7 @@
                             <div class="team-item">
                                 <div class="team-img">
                                     <img src="img/IMG-20250202-WA0000_updated.jpg" alt="Team Image">
-                                    <!-- <a class="resume-btn" href="resume/SOURAV.pdf" target="_blank">Resume</a> -->
+                                    <a class="resume-btn" href="resume/debabrata.pdf" target="_blank">Resume</a>
                                 </div>
                                 <div class="team-text">
                                     <h2>Debabrata Das</h2>
@@ -617,14 +617,64 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="team-item">
+                                <div class="dummy-img">
+                                    <span>Sanjib Kr. Sahoo</span>
+                                    <a class="resume-btn" href="resume/SANJIB.pdf" target="_blank">Resume</a>
+                                </div>
+                                <div class="team-text">
+                                    <h2>Sanjib Kr. Sahoo</h2>
+                                    <p>Civil Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="team-item">
+                                <div class="dummy-img">
+                                    <span>Avijit Sarkar</span>
+                                    <a class="resume-btn" href="resume/AVIJIT.pdf" target="_blank">Resume</a>
+                                </div>
+                                <div class="team-text">
+                                    <h2>Avijit Sarkar</h2>
+                                    <p>Structural Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="team-item">
+                                <div class="dummy-img">
+                                    <span>Rajesh Santra</span>
+                                    <a class="resume-btn" href="resume/Rajesh.pdf" target="_blank">Resume</a>
+                                </div>
+                                <div class="team-text">
+                                    <h2>Rajesh Santra</h2>
+                                    <p>Civil Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                        
                         
                         <style>
-                        .team-img {
-                            position: relative;
-                            display: inline-block;
-                            width: 100%;
+                        .team-item {
+                            position: relative; /* Important for resume button to position correctly */
+                            overflow: hidden;
                         }
-                        
+
+                        .team-img,
+                        .dummy-img {
+                            position: relative;
+                            width: 100%;
+                            height: 300px; /* Ensure consistency */
+                            background-color: #dbeafe;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            text-align: center;
+                        }
+
                         .resume-btn {
                             position: absolute;
                             top: 50%;
@@ -639,12 +689,28 @@
                             transition: 0.3s ease-in-out;
                             opacity: 0;
                             visibility: hidden;
+                            z-index: 2;
                         }
-                        
-                        .team-img:hover .resume-btn {
+
+                        .team-img:hover .resume-btn,
+                        .dummy-img:hover .resume-btn {
                             opacity: 1;
                             visibility: visible;
                         }
+
+                        .dummy-img span {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-size: 24px;
+                            font-weight: bold;
+                            color: #1e3a8a;
+                            z-index: 1;
+                        }
+
+                        
+                        
                         </style>
                         
                     </div>
